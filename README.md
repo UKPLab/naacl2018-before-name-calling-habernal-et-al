@@ -60,7 +60,7 @@ $ cd data-analysis/
 $ jupyter-notebook
 ```
 
-* Full analysis of Change my View data is in `01-full-cmv-data-analysis.ipynb`. Note that in order to run this notebook, the full scraped CMV dataset is required. It is not part of this project due to its size (500 MB compressed). Please contact me if you need this full data.
+* Full analysis of Change my View data is in `01-full-cmv-data-analysis.ipynb`. Note that in order to run this notebook, the full scraped CMV dataset is required. It is not part of this project due to its size (500 MB compressed), you can find the archive [here](https://public.ukp.informatik.tu-darmstadt.de/ih/RedditChangeMyView2017/).
 * Analysis of Ad hominem arguments and threads is in `02-ad-hominem-analysis.ipynb`. It uses the "pickled" file `data-analysis/ad-hominem-threads-list-dump.pkl` which was created in the previous step and it is available in this repository. Only for the last couple of cells, the full data is required (see the previous point).
 * For manual analysis of Ad hominem threads, `03-ad-hominem-content-analysis.ipynb` prints several random threads of length 3 ending in AH.
 * Verification of AH labeling by CMV mods can be found in `04-ad-hominem-labeling-verification.ipynb` which performs also negative sampling based on semantic similarity. To perform the sampling, full CMV dataset is required.
@@ -95,11 +95,13 @@ Other libraries: LDA and scipy (for the LDA model), NLTK (for tokenizing)
 $ pip install lda==1.0.5 scipy==1.1.0 nltk==3.2.5
 ```
 
-### Re-creating `en-top100k.embeddings.pkl` with embeddings
+### Downloading or re-creating `en-top100k.embeddings.pkl` with embeddings
 
 Due to a 100MB limit on GitHub, the file `en-top100k.embeddings.pkl` is not included (but required for the experiments).
 
-Download Glove embeddings (`glove.840B.300d.txt.gz`) and run `vocabulary.py`, it will pickle the embeddings present in the top 100k vocabulary (the file `en-top100k.vocabulary.pkl.gz` is included).
+* Download (faster): The file is publicly available [here](https://public.ukp.informatik.tu-darmstadt.de/ih/RedditChangeMyView2017/en-top100k.embeddings.pkl.gz).
+
+* Re-create (slower): Download Glove embeddings (`glove.840B.300d.txt.gz`) and run `vocabulary.py`, it will pickle the embeddings present in the top 100k vocabulary (the file `en-top100k.vocabulary.pkl.gz` is included).
 
 
 ### Classification experiments
