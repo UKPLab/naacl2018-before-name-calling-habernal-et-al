@@ -1,6 +1,6 @@
 # Before Name-calling: Dynamics and Triggers of Ad Hominem Fallacies in Web Argumentation
 
-Code and data for NAACL 2018 paper "Before Name-calling: Dynamics and Triggers of Ad Hominem Fallacies in Web Argumentation" by Ivan Habernal, Henning Wachsmuth, Iryna Gurevych, and Benno Stein. Paper pre-print available at arXiv: https://arxiv.org/abs/1802.06613
+Code and data for NAACL 2018 paper "Before Name-calling: Dynamics and Triggers of Ad Hominem Fallacies in Web Argumentation" by Ivan Habernal, Henning Wachsmuth, Iryna Gurevych, and Benno Stein. Paper PDF available at ACL Anthology: http://aclweb.org/anthology/N18-1036
 
 Use the following citation if you use any of the code or data:
 
@@ -13,11 +13,11 @@ Use the following citation if you use any of the code or data:
     publisher = {Association for Computational Linguistics},
     booktitle = {Proceedings of the 2018 Conference of the North American
                  Chapter of the Association for Computational Linguistics:
-                 Human Language Technologies},
-    pages     = {(to appear)},
+                 Human Language Technologies, Volume 1 (Long Papers)},
+    pages     = {386--396},
     month     = jun,
     year      = {2018},
-    address   = {New Orleans, LA, USA}
+    address   = {New Orleans, Louisiana}
 }
 ```
 
